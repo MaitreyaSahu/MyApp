@@ -2,75 +2,216 @@
     box-sizing: border-box;
 }
 
-body{
-    margin: 0px;
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
 }
 
-.header {
-    background-color: #222831;
+#product-overview {
+    background: url("freedom.jpg");
+    width: 100%;
+    height: 528px;
+    padding: 10px;
 }
 
-.header-item{
-    display: inline;
+.section-title {
+    color: #2ddf5c;
+    text-align: center;
 }
 
-.header-item a{
+#product-overview h1 {
+    color: #2ddf5c;
+    font-family: 'Anton', sans-serif;
+}
+
+/* h1 {
+    font-family: sans-serif;
+} */
+
+.main-header {
+    width: 100%;
+    background: #38CC77;
+    padding: 15px 25px;
+}
+
+.main-header>div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-header__brand {
+    color: #0e4f1f;
     text-decoration: none;
-    color: #eeeeee;
+    font-weight: bold;
+    font-size: 22px;
 }
 
-.logo{
-    font-size: 25px;
-    padding: 0 15px;
-}
-
-
-.nav-items{
+.main-nav {
     display: inline-block;
     text-align: right;
-    width: calc(100% - 100px);
+    width: calc(100% - 74px);
+    vertical-align: middle;
 }
 
-.nav-item{
+.main-nav__items {
+    margin: 0;
+    padding: 0;
     list-style: none;
-    display: inline;
 }
 
-.nav-item a{
+.main-nav__item {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.main-nav__item a {
     text-decoration: none;
+    color: #0e4f1f;
+    font-weight: bold;
+    padding: 3px 0;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+    color: white;
+    border-bottom: 5px solid white;
+}
+
+.main-nav__item--cta a {
+    color: white;
+    background: #ff1b68;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+    color: #ff1b68;
+    background: white;
+    border: none;
+}
+
+.plan {
+    display: inline-block;
+    width: 30%;
+    background-color: #38CC77;
+    padding: 16px;
+    margin: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.plan__recomended {
+    background-color: #1FAA59;
+    color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.plan__anotation {
+    background-color: white;
+    color: #1FAA59;
+    padding: 5px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.plan__title {
+    color: #020f06;
+}
+
+.plan__recomended .plan__title {
+    color: white;
+}
+
+.plan__price {
+    color: #5a5a5a;
+}
+
+.plan__features {
+    list-style: none;
+    padding: 0;
+}
+
+.plan__feature {
+    margin: 10px 0;
+}
+
+.button {
+    background: #0e4f1f;
+    color: white;
+    padding: 5px 10px;
+    font: inherit;
+    font-weight: bold;
+    border: 1.5px solid #0e4f1f;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+    background: white;
+    color: #0e4f1f;
+    font-weight: bold;
+}
+
+.button:focus {
+    outline: none;
+}
+
+#key-features {
+    background-color: lightcoral;
     padding: 15px;
-    border-radius: 3px;
+    margin-top: 50px;
 }
 
-.nav-item a:hover,
-.nav-item a:active{
-    color: #393e46;
-    background-color: #eee ;
+#key-features .section-title {
+    color: white;
 }
 
-.action-button a{
-    background-color:  #f05454;
-}
-
-
-
-.main {
-    background-color: #00adb5;
-    height: 620px;
+.key-features__list {
+    list-style: none;
+    padding: 0;
     margin: 0;
+    text-align: center;
 }
 
-.main p,
-.main h1{
-    margin: 0;
+.key-feature__image{
+    height: 150px;
+    width: 150px;
+    border:1.5px solid #382626;
+    border-radius: 50%;
+    background-color: white;
+    margin: auto;
+    display: inline-block
+}
+
+.key-feature{
+    display: inline-block;
+    width: 30%;
+    color: white;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.main-footer{
+    background-color:#0D0D0D;
+    text-align: center;
     padding: 10px;
 }
 
-.footer {
-    background-color: #393e46;
+.main-footer_link{
+    display: inline-block;
+    margin: 0 20px;
+    
 }
 
-.footer p{
-    margin: 0;
-    padding: 10px;
+.main-footer_link a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.main-footer_link a:hover,
+.main-footer_link a:active{
+    color: #cfcdcd;
 }
